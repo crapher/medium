@@ -1,3 +1,5 @@
+### This file is the complete code of this Medium article
+### https://medium.com/@diegodegese/backtesting-stock-trading-strategies-using-python-ea191a15970c
 import pandas as pd
 
 try:
