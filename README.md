@@ -1,5 +1,9 @@
-# Backtesting everything
+# Medium articles code repository
 
-This GitHub repository contains the code used to backtest different trading strategies with stocks. The main goal of this project is to explore and compare different trading strategies to see which ones perform the best. To accomplish this, we will be using Python to gather historical stock price data and implement different trading algorithms. The code in this repository includes a script to download and prepare the data for analysis, as well as code to implement and backtest various trading strategies.
+This GitHub repository contains the code of all my Medium articles related to the stock market, reinforcement learning, machine learning, and some other additional interesting topics. The articles cover a range of topics such as financial time series analysis, stock price prediction, portfolio optimization, and trading strategies, among others. The code is organized by article and includes Jupyter notebooks, Python scripts, and other relevant files.
+
+The repository is intended for researchers, practitioners, and enthusiasts who want to learn more about the intersection of finance and machine learning. By providing access to the code of the articles, the repository enables users to reproduce the results and experiment with their own variations.
+
+The repository is updated regularly with new articles and code. Contributions from the community are welcome and encouraged.
 
 Please note that the information and code provided in this repository is for educational and informational purposes only and should not be construed as financial advice. Trading stocks and other financial instruments involves risk, and you should always do your own research and seek the advice of a licensed financial advisor before making any investment decisions. The author and publisher of this repository make no representation or warranties with respect to the accuracy or completeness of the contents of this repository and specifically disclaim any implied warranties of merchantability or fitness for any particular purpose. The author and publisher of this repository shall in no event be liable for any loss of profit or any other commercial damages, including but not limited to special, incidental, consequential, or other damages.

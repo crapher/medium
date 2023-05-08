@@ -1,3 +1,5 @@
+### This file is the complete code of this Medium article
+### https://medium.com/@diegodegese/reinforcement-learning-for-stock-trading-strategies-a-comprehensive-guide-c56677a9943
 import math
 import numpy as np
 import pandas as pd
@@ -8,7 +10,8 @@ from stable_baselines3.common.env_util import make_vec_env
 from next_close_env import NextCloseEnv
 
 # Read the data and generate the train and test dataframes
-df = pd.read_csv('OIH_15T.csv.gz', compression='gzip')
+#df = pd.read_csv('OIH_15T.csv.gz', compression='gzip')
+df = pd.read_csv('/Users/diego/Developer/datasets/finance/stocks/5m_cdd/DIA.csv.gz', compression='gzip')
 train = df[df['date'] <= '2022-01-01']
 test = df[df['date'] > '2022-01-01']
 
