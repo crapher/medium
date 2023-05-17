@@ -1,5 +1,3 @@
-### This file is the complete code of this Medium article
-### https://medium.com/@diegodegese/backtesting-stock-trading-strategies-using-python-part-2-b9b1b7a8a8fa
 import numpy as np
 import pandas as pd
 import pandas_ta as ta

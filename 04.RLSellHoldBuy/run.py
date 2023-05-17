@@ -1,5 +1,3 @@
-### This file is the complete code of this Medium article
-### https://medium.com/@diegodegese/reinforcement-learning-for-stock-trading-strategies-predicting-when-to-buy-and-sell-2ab5f542a41d
 import math
 import numpy as np
 import pandas as pd 
@@ -35,7 +33,7 @@ done = False
 # Predict the test values with the trained model
 obs = env.reset()
 while not done:
-    action, _states = model.predict(obs)
+    action, _states = model.predict(obs, deterministic=True)
     obs, rewards, done, info = env.step(action)
 
     print(f"Action: {info['current_action']} - Profit: {info['current_profit']:6.3f}")

@@ -1,5 +1,3 @@
-### This file is the complete code of this Medium article
-### https://medium.com/@diegodegese/reinforcement-learning-for-stock-trading-strategies-a-comprehensive-guide-c56677a9943
 import math
 import numpy as np
 import pandas as pd
@@ -37,7 +35,7 @@ done = False
 # Predict the test values with the trained model
 obs = env.reset()
 while not done:
-    action, _states = model.predict(obs)
+    action, _states = model.predict(obs, deterministic=True)
     obs, rewards, done, info = env.step(action)
 
     # Save the values to calculate the errors

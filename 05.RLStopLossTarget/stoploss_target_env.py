@@ -2,26 +2,30 @@ import numpy as np
 import gym
 from gym import spaces
 
-# Normalization & Penalization 
-OBS_MIN_MAX = 0.05
+# Penalization 
 NOOP_PENALIZATION = 0.01
 
-# Operations
-SELL = 0
-HOLD = 1
-BUY = 2
+# Exit Points
+STOP_LOSS = 0.01
+TARGET = 0.015
 
-class SellHoldBuyEnv(gym.Env):
+# Operations
+HOLD = 0
+BUY = 1
+
+class StopLossTargetEnv(gym.Env):
         
-    def __init__(self, observation_size, closes):
+    def __init__(self, observation_size, features, prices):
 
         # Data
-        self.__features = closes
-        self.__prices = closes
+        self.__features = features
+        self.__prices = prices
 
-        # Spaces
-        self.observation_space = spaces.Box(low=np.NINF, high=np.PINF, shape=(observation_size,), dtype=np.float32)
-        self.action_space = spaces.Discrete(3)
+        # Spaces 
+        self.observation_space = spaces.Dict({
+            'last_action': spaces.Discrete(2), 
+            'observation': spaces.Box(low=np.NINF, high=np.PINF, shape=(observation_size, features.shape[1]), dtype=np.float32)})
+        self.action_space = spaces.Discrete(2)
 
         # Episode Management
         self.__start_tick = observation_size
@@ -31,12 +35,16 @@ class SellHoldBuyEnv(gym.Env):
         # Position Management
         self.__current_action = HOLD
         self.__current_profit = 0
+        self.__wins = 0
+        self.__losses = 0
         
     def reset(self):
 
         # Reset the current action and current profit
         self.__current_action = HOLD
         self.__current_profit = 0
+        self.__wins = 0
+        self.__losses = 0
         
         # Reset the current tick pointer and return a new observation
         self.__current_tick = self.__start_tick
@@ -53,18 +61,31 @@ class SellHoldBuyEnv(gym.Env):
         step_reward = 0
         if self.__current_action == HOLD and action == BUY:
             self.__open_price = self.__prices[self.__current_tick]
+            self.__stop_loss = self.__open_price * (1 - STOP_LOSS)
+            self.__target = self.__open_price * (1 + TARGET)
+            
             self.__current_action = BUY
-        elif self.__current_action == BUY and action == SELL:            
-            step_reward = self.__prices[self.__current_tick] - self.__open_price
-            self.__current_profit += step_reward
-            self.__current_action = HOLD
+        elif self.__current_action == BUY:
+            current_price = self.__prices[self.__current_tick]
+            
+            if current_price < self.__stop_loss or current_price > self.__target:
+                step_reward = current_price - self.__open_price
+                self.__current_profit += step_reward
+                self.__current_action = HOLD
+                
+                if step_reward > 0:
+                    self.__wins += 1
+                else:
+                    self.__losses += 1
         elif self.__current_action == HOLD:
             step_reward = NOOP_PENALIZATION
 
         # Generate the custom info array with the real and predicted values
         info = {
             'current_action': self.__current_action,
-            'current_profit': self.__current_profit
+            'current_profit': self.__current_profit,
+            'wins': self.__wins,
+            'losses': self.__losses
         }
 
         # Increase the current tick pointer, check if the environment is fully processed, and get a new observation
@@ -77,16 +98,10 @@ class SellHoldBuyEnv(gym.Env):
 
     def action_masks(self):
         
-        mask = np.ones(self.action_space.n, dtype=bool)
-        
-        # If current action is Buy, only allow to hold or sell
-        if self.__current_action == BUY:
-            mask[BUY] = False
+        # Allow to BUY only if the current position is HOLD
+        mask = np.ones(self.action_space.n, dtype=bool)     
+        mask[BUY] = self.__current_action == HOLD
 
-        # If current action is Hold, only allow to hold or buy
-        if self.__current_action == HOLD:
-            mask[SELL] = False
-        
         return mask
         
     def __get_observation(self):
@@ -95,12 +110,8 @@ class SellHoldBuyEnv(gym.Env):
         if self.__current_tick >= self.__end_tick:
             return None
 
-        # Generate a copy of the observation to avoid changing the original data
-        obs = self.__features[(self.__current_tick - self.__start_tick):self.__current_tick].copy()
-
-        # Calculate values between -1 and 1 for the new observation without leak any data
-        avg = np.mean(obs)
-        obs = np.clip((obs / avg - 1) / OBS_MIN_MAX, -1, 1)
-
         # Return the calculated observation
-        return obs
+        return {
+            'last_action': self.__current_action,
+            'observation': self.__features[(self.__current_tick - self.__start_tick):self.__current_tick]
+        }

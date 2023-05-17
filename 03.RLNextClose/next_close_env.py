@@ -1,5 +1,3 @@
-### This file is the complete code of this Medium article
-### https://medium.com/@diegodegese/reinforcement-learning-for-stock-trading-strategies-a-comprehensive-guide-c56677a9943
 import numpy as np
 import gym
 from gym import spaces
