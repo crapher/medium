@@ -59,7 +59,7 @@ class SellHoldBuyEnv(gym.Env):
             self.__current_profit += step_reward
             self.__current_action = HOLD
         elif self.__current_action == HOLD:
-            step_reward = NOOP_PENALIZATION
+            step_reward = -NOOP_PENALIZATION
 
         # Generate the custom info array with the real and predicted values
         info = {
