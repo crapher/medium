@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import pandas_ta as ta
 
 TIMEFRAMES = ['5T', '15T', '1H', '1D']
 
@@ -10,11 +11,22 @@ TIMEFRAMES = ['5T', '15T', '1H', '1D']
 #   '-1' indicating a sell signal
 def get_signals(df):
 
+    pd.options.mode.chained_assignment = None
+    
+    df.ta.bbands(close=df['close'], length=20, append=True)    
+    df = df.dropna()
+    
+    df['high_limit'] = df['BBU_20_2.0'] + (df['BBU_20_2.0'] - df['BBL_20_2.0']) / 2
+    df['low_limit'] = df['BBL_20_2.0'] - (df['BBU_20_2.0'] - df['BBL_20_2.0']) / 2
+    df['close_percentage'] = np.clip((df['close'] - df['low_limit']) / (df['high_limit'] - df['low_limit']), 0, 1)
+    df['volatility'] = df['BBU_20_2.0'] / df['BBL_20_2.0'] - 1
+    min_volatility = df['volatility'].mean() - df['volatility'].std()
+    
     # Buy Signals
-    df['signal'] = np.where((df['low'] < df['low'].shift()) & (df['close'] > df['high'].shift()) & (df['open'] < df['close'].shift()), 1, 0)
-
+    df['signal'] = np.where((df['volatility'] > min_volatility) & (df['close_percentage'] < 0.25), 1, 0)
+    
     # Sell Signals
-    df['signal'] = np.where((df['high'] > df['high'].shift()) & (df['close'] < df['low'].shift()) & (df['open'] > df['open'].shift()), -1, df['signal'])
+    df['signal'] = np.where((df['close_percentage'] > 0.75), -1, df['signal'])
 
     return df['signal']
 
@@ -28,16 +40,16 @@ def show_stategy_result(timeframe, df):
     profit = 0.0
     wins = 0
     losses = 0
-
+    
     for i in range(len(df)):
 
         signal = df.iloc[i]['signal']
-
+        
         if signal == 1 and not waiting_for_close:
             waiting_for_close = True
             open_price = df.iloc[i]['close']
 
-        elif signal == -1 and waiting_for_close:
+        elif (signal == -1 and waiting_for_close):
             waiting_for_close = False
             close_price = df.iloc[i]['close']
 
@@ -55,7 +67,7 @@ for timeframe in TIMEFRAMES:
 
     # Read the data
     df = pd.read_csv(f'OIH_{timeframe}.csv.gz', compression='gzip')
-
+    
     # Add the signals to each row
     df['signal'] = get_signals(df)
 

@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import pandas_ta as ta
 
-TIMEFRAMES = ['15T', '1H', '1D']
+TIMEFRAMES = ['5T', '15T', '1H', '1D']
 
 # Using this method, you can obtain buy and sell signals determined by the selected strategy.
 # The resulting signals are represented as a series of numerical values: 

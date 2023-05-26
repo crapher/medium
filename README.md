@@ -13,4 +13,8 @@ Please note that the information and code provided in this repository is for edu
 02.Environment: https://medium.com/@diegodegese/backtesting-stock-trading-strategies-using-python-part-2-b9b1b7a8a8fa
 03.RLNextClose: https://medium.com/@diegodegese/reinforcement-learning-for-stock-trading-strategies-a-comprehensive-guide-c56677a9943
 04.RLSellHoldBuy: https://medium.com/@diegodegese/reinforcement-learning-for-stock-trading-strategies-predicting-when-to-buy-and-sell-2ab5f542a41d
-05.RLStopLossTarget: TBD
+05.RLStopLossTarget: https://medium.com/@diegodegese/next-level-investing-dominating-the-stock-market-with-maskableppo-in-a-stop-loss-target-cc03c3bcc9cb
+06.GASellHoldBuy: https://medium.com/@diegodegese/accelerating-model-training-and-improving-stock-market-predictions-with-genetic-algorithms-and-541b04be685b
+07.StrategyTests:
+	01: Volatility with Bollinger Bands: TBD
+	02: Reversal: TBD
