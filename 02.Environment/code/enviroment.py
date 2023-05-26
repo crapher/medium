@@ -29,7 +29,8 @@ def show_stategy_result(timeframe, df):
     open_price = 0
 
     profit = 0.0
-    trades = 0
+    wins = 0
+    losses = 0
     
     for i in range(len(df)):
     
@@ -44,17 +45,20 @@ def show_stategy_result(timeframe, df):
             close_price = df.iloc[i]['close']
             
             profit += close_price - open_price
-            trades += 1
+            wins = wins + (1 if (close_price - open_price) > 0 else 0)
+            losses = losses + (1 if (close_price - open_price) < 0 else 0)
 
     print(f' Result for timeframe {timeframe} '.center(60, '*'))
-    print(f'- Final Profit: {profit:.2f}')
-    print(f'- Total Trades: {trades}')
+    print(f'* Profit/Loss: {profit:.2f}')
+    print(f"* Wins: {wins} - Losses: {losses}")
+    print(f"* Win Rate: {100 * (wins/(wins + losses)):6.2f}%")
     
 # Iterate over each timeframe, apply the strategy and show the result
 for timeframe in TIMEFRAMES:
 
     # Read the data
-    df = pd.read_csv(f'OIH_{timeframe}.csv.gz', compression='gzip')
+    df = pd.read_csv(f'/Users/diego/Developer/datasets/finance/stocks/{timeframe}_cdd/OIH.csv.gz', compression='gzip')
+#    df = pd.read_csv(f'OIH_{timeframe}.csv.gz', compression='gzip')
     
     # Add the signals to each row
     df['signal'] = get_signals(df)
