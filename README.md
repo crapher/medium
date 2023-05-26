@@ -9,12 +9,18 @@ The repository is updated regularly with new articles and code. Contributions fr
 Please note that the information and code provided in this repository is for educational and informational purposes only and should not be construed as financial advice. Trading stocks and other financial instruments involves risk, and you should always do your own research and seek the advice of a licensed financial advisor before making any investment decisions. The author and publisher of this repository make no representation or warranties with respect to the accuracy or completeness of the contents of this repository and specifically disclaim any implied warranties of merchantability or fitness for any particular purpose. The author and publisher of this repository shall in no event be liable for any loss of profit or any other commercial damages, including but not limited to special, incidental, consequential, or other damages.
 
 # Articles
-01.Preparation: https://medium.com/@diegodegese/backtesting-stock-trading-strategies-using-python-ea191a15970c
-02.Environment: https://medium.com/@diegodegese/backtesting-stock-trading-strategies-using-python-part-2-b9b1b7a8a8fa
-03.RLNextClose: https://medium.com/@diegodegese/reinforcement-learning-for-stock-trading-strategies-a-comprehensive-guide-c56677a9943
-04.RLSellHoldBuy: https://medium.com/@diegodegese/reinforcement-learning-for-stock-trading-strategies-predicting-when-to-buy-and-sell-2ab5f542a41d
-05.RLStopLossTarget: https://medium.com/@diegodegese/next-level-investing-dominating-the-stock-market-with-maskableppo-in-a-stop-loss-target-cc03c3bcc9cb
-06.GASellHoldBuy: https://medium.com/@diegodegese/accelerating-model-training-and-improving-stock-market-predictions-with-genetic-algorithms-and-541b04be685b
+01.Preparation: https://medium.com/@diegodegese/ea191a15970c
+
+02.Environment: https://medium.com/@diegodegese/b9b1b7a8a8fa
+
+03.RLNextClose: https://medium.com/@diegodegese/c56677a9943
+
+04.RLSellHoldBuy: https://medium.com/@diegodegese/2ab5f542a41d
+
+05.RLStopLossTarget: https://medium.com/@diegodegese/cc03c3bcc9cb
+
+06.GASellHoldBuy: https://medium.com/@diegodegese/541b04be685b
+
 07.StrategyTests:
-	01: Volatility with Bollinger Bands: TBD
-	02: Reversal: TBD
+- Volatility with Bollinger Bands: TBD
+- Reversal: TBD
