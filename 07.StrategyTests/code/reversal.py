@@ -10,10 +10,10 @@ TIMEFRAMES = ['5T', '15T', '1H', '1D']
 #   '-1' indicating a sell signal
 def get_signals(df):
 
-    # Reversal (Long)
+    # Buy Signal
     df['signal'] = np.where((df['low'] < df['low'].shift()) & (df['close'] > df['high'].shift()) & (df['open'] < df['close'].shift()), 1, 0)
 
-    # Reversal (Short)
+    # Sell Signal
     df['signal'] = np.where((df['high'] > df['high'].shift()) & (df['close'] < df['low'].shift()) & (df['open'] > df['open'].shift()), -1, df['signal'])
 
     return df['signal']
