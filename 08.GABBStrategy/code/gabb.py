@@ -64,7 +64,7 @@ def get_result(df, min_volatility, max_buy_perc, min_sell_perc):
     total_reward = result['total_reward'].sum()
     wins = len(result[result['total_reward'] > 0])
     losses = len(result[result['total_reward'] < 0])
-    
+
     return total_reward, wins, losses
 
 for timeframe in TIMEFRAMES:
@@ -100,7 +100,6 @@ for timeframe in TIMEFRAMES:
     # Show details of the best solution.
     solution, solution_fitness, _ = ga_instance.best_solution()
 
-    #print(f"Fitness value of the best solution: {solution_fitness:10.2f}")
     print(f' Best Solution Parameters '.center(60, '*'))
     print(f"Min Volatility   : {solution[0]:6.4f}")
     print(f"Min Perc to Buy  : {solution[1]:6.4f}")

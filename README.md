@@ -1,6 +1,6 @@
 # Medium articles code repository
 
-This GitHub repository contains the code of all my Medium articles related to the stock market, reinforcement learning, machine learning, and some other additional interesting topics. The articles cover a range of topics such as financial time series analysis, stock price prediction, portfolio optimization, and trading strategies, among others. The code is organized by article and includes Jupyter notebooks, Python scripts, and other relevant files.
+This GitHub repository contains the code of all my Medium articles related to the stock market, crypto market, reinforcement learning, machine learning, and some other additional interesting topics. The articles cover a range of topics such as financial time series analysis, stock price prediction, portfolio optimization, and trading strategies, among others. The code is organized by article and includes Jupyter notebooks, Python scripts, and other relevant files.
 
 The repository is intended for researchers, practitioners, and enthusiasts who want to learn more about the intersection of finance and machine learning. By providing access to the code of the articles, the repository enables users to reproduce the results and experiment with their own variations.
 
@@ -22,5 +22,9 @@ Please note that the information and code provided in this repository is for edu
 06.GASellHoldBuy: https://medium.com/@diegodegese/541b04be685b
 
 07.StrategyTests:
-- Volatility with Bollinger Bands: TBD
+- Volatility with Bollinger Bands: https://medium.com/@diegodegese/c53cdadce99b
 - Reversal: TBD
+
+08.GABBStrategy: TBD
+
+09.CryptoDataDownload: TBD
