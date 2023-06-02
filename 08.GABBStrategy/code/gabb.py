@@ -102,8 +102,8 @@ for timeframe in TIMEFRAMES:
 
     print(f' Best Solution Parameters '.center(60, '*'))
     print(f"Min Volatility   : {solution[0]:6.4f}")
-    print(f"Min Perc to Buy  : {solution[1]:6.4f}")
-    print(f"Max Perc to Sell : {solution[2]:6.4f}")
+    print(f"Max Perc to Buy  : {solution[1]:6.4f}")
+    print(f"Min Perc to Sell : {solution[2]:6.4f}")
 
     # Get Reward from train data
     profit, wins, losses = get_result(train, solution[0], solution[1], solution[2])
