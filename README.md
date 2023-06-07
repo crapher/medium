@@ -23,8 +23,10 @@ Please note that the information and code provided in this repository is for edu
 
 07.StrategyTests:
 - Volatility with Bollinger Bands: https://medium.com/@diegodegese/c53cdadce99b
-- Reversal: TBD
+- Reversal: https://medium.com/@diegodegese/3f337e06f036
 
-08.GABBStrategy: TBD
+08.GABBStrategy: https://medium.com/@diegodegese/ef4c0a83ec10
 
-09.CryptoDataDownload: TBD
+09.CryptoDataDownload: https://medium.com/@diegodegese/4e0525d3ecd9
+
+10.GARangePrices: TBD
