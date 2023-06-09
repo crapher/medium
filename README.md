@@ -29,4 +29,6 @@ Please note that the information and code provided in this repository is for edu
 
 09.CryptoDataDownload: https://medium.com/@diegodegese/4e0525d3ecd9
 
-10.GARangePrices: TBD
+10.GARangePrices: https://medium.com/@diegodegese/fe9ed1081f8a
+
+11.OptionsBacktest: TBD
