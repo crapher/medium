@@ -13,11 +13,8 @@ df = pd.read_csv(FILENAME, header=0)
 df['date'] = pd.to_datetime(df['date'])
 df['expire_date'] = pd.to_datetime(df['expire_date'])
 
-# Get all the options expiring between 7 and 9 days
-# If there are more than one, keep the closest to 7 days
-df_open = df[(df['dte'] >= 7) & (df['dte'] <= 9)]
-idx = df_open.groupby(['expire_date'])['dte'].transform(min) == df_open['dte']
-df_open = df_open[idx]
+# Get all the options expiring int 7 days
+df_open = df[df['dte'] == 7]
 
 # Get all the expired options
 # If the underlying last > strike, set the ask price to 0.00
@@ -41,6 +38,6 @@ puts_qty = len(df_op)
 puts_itm = len(df_op[df_op['underlying_last_buy'] < df_op['strike']])
 profit_loss = (((df_op['bid_sell'] - df_op['ask_buy']) * 100 - df_op['fees']) * CONTRACTS_QTY).sum()
 
-print(f' NAKED PUT STRATEGY - RESULT '.center(70, '*'))
+print(f' NAKED PUTS STRATEGY - RESULT '.center(70, '*'))
 print(f'Closing ITM: {100 * puts_itm / puts_qty:.2f}% ({puts_itm} / {puts_qty})')
 print(f"     Result: $ {profit_loss:.2f}")
