@@ -31,4 +31,6 @@ Please note that the information and code provided in this repository is for edu
 
 10.GARangePrices: https://medium.com/@diegodegese/fe9ed1081f8a
 
-11.OptionsBacktest: TBD
+11.OptionsBacktest:
+- Naked Puts: https://medium.com/@diegodegese/dea1607c81ca
+- 1-minute Options: TBD
