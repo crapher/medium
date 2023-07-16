@@ -36,3 +36,4 @@ Please note that the information and code provided in this repository is for edu
 - SPY 1-minute Options: https://medium.com/@diegodegese/3ea0c2d05ae5
 - QQQ 1-minute Options: https://medium.com/@diegodegese/bb5b609ca7e0
 - AAPL 1-minute Options: TBD
+- MSFT 1-minute Options: TBD
