@@ -33,7 +33,8 @@ Please note that the information and code provided in this repository is for edu
 
 11.OptionsBacktest:
 - Naked Puts: https://medium.com/@diegodegese/dea1607c81ca
-- SPY 1-minute Options: https://medium.com/@diegodegese/3ea0c2d05ae5
-- QQQ 1-minute Options: https://medium.com/@diegodegese/bb5b609ca7e0
-- AAPL 1-minute Options: TBD
-- MSFT 1-minute Options: TBD
+- SPY 1-minute Options (Trend Options): https://medium.com/@diegodegese/3ea0c2d05ae5
+- QQQ 1-minute Options (Trend Options): https://medium.com/@diegodegese/bb5b609ca7e0
+- AAPL 1-minute Options (Trend Options): https://medium.com/@diegodegese/d661eb7e8c37
+- MSFT 1-minute Options (Trend Options): https://medium.com/@diegodegese/499d3584a653
+- SPY 1-minute Options (Trend $NYSI): TBD
