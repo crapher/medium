@@ -37,4 +37,6 @@ Please note that the information and code provided in this repository is for edu
 - QQQ 1-minute Options (Trend Options): https://medium.com/@diegodegese/bb5b609ca7e0
 - AAPL 1-minute Options (Trend Options): https://medium.com/@diegodegese/d661eb7e8c37
 - MSFT 1-minute Options (Trend Options): https://medium.com/@diegodegese/499d3584a653
-- SPY 1-minute Options (Trend $NYSI): TBD
+- SPY 1-minute Options (Trend $NYSI): https://medium.com/@diegodegese/2f19a3adf438
+
+12.RLNextTrendNysi: TBD
