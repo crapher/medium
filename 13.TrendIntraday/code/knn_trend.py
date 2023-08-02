@@ -28,11 +28,11 @@ params = {
         }
 
 grid = GridSearchCV(
-    model, 
-    param_grid=params, 
-    scoring='roc_auc', 
+    model,
+    param_grid=params,
+    scoring='roc_auc',
     n_jobs=4)
-    
+
 grid.fit(
     np.concatenate((train_x, val_x)),
     np.concatenate((train_y, val_y)))
@@ -47,7 +47,7 @@ model = KNeighborsClassifier(
 model.fit(
     np.concatenate((train_x, val_x)),
     np.concatenate((train_y, val_y)))
-    
+
 # Predict and save train values
 pred_y = get_predicted_values(model, train_x)
 save_result(train_y, pred_y, 'knn.train.csv.gz')
