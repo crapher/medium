@@ -39,10 +39,14 @@ Please note that the information and code provided in this repository is for edu
 - MSFT 1-minute Options (Trend Stock): https://medium.com/@diegodegese/499d3584a653
 - SPY 1-minute Options (Trend $NYSI): https://medium.com/@diegodegese/2f19a3adf438
 - NVDA 1-minute Options (Trend Stock): https://medium.com/@diegodegese/7f40de2c3dec
+- IWM 1-minute Options (Trend Stock): TBD
 
 12.RLNextTrendNysi: https://medium.com/@diegodegese/4d4466433dda
 
 13.TrendIntraday:
-- Part 1: https://medium.com/@diegodegese/c38b65511a3d
-- Part 2: https://medium.com/@diegodegese/7578ea509255
-- Part 3: TBD
+- Part 1 (Basic): https://medium.com/@diegodegese/c38b65511a3d
+- Part 2 (KNN): https://medium.com/@diegodegese/7578ea509255
+- Part 3 (Neural Networks): TBD
+- Part 4 (K-Means): TBD
+- Part 5 (Genetic Algorithm): TBD
+- Part 6 (XGBoost): TBD
