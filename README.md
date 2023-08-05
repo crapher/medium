@@ -46,7 +46,7 @@ Please note that the information and code provided in this repository is for edu
 13.TrendIntraday:
 - Part 1 (Basic): https://medium.com/@diegodegese/c38b65511a3d
 - Part 2 (KNN): https://medium.com/@diegodegese/7578ea509255
-- Part 3 (Neural Networks): TBD
+- Part 3 (Neural Networks): https://medium.com/@diegodegese/ed148e6dfbe6
 - Part 4 (K-Means): TBD
 - Part 5 (Genetic Algorithm): TBD
 - Part 6 (XGBoost): TBD
