@@ -34,10 +34,10 @@ Please note that the information and code provided in this repository is for edu
 11.OptionsBacktest:
 - Naked Puts: https://medium.com/@diegodegese/dea1607c81ca
 - SPY 1-minute Options (Trend Stock): https://medium.com/@diegodegese/3ea0c2d05ae5
+- SPY 1-minute Options (Trend $NYSI): https://medium.com/@diegodegese/2f19a3adf438
 - QQQ 1-minute Options (Trend Stock): https://medium.com/@diegodegese/bb5b609ca7e0
 - AAPL 1-minute Options (Trend Stock): https://medium.com/@diegodegese/d661eb7e8c37
 - MSFT 1-minute Options (Trend Stock): https://medium.com/@diegodegese/499d3584a653
-- SPY 1-minute Options (Trend $NYSI): https://medium.com/@diegodegese/2f19a3adf438
 - NVDA 1-minute Options (Trend Stock): https://medium.com/@diegodegese/7f40de2c3dec
 - IWM 1-minute Options (Trend Stock): TBD
 
@@ -47,6 +47,7 @@ Please note that the information and code provided in this repository is for edu
 - Part 1 (Basic): https://medium.com/@diegodegese/c38b65511a3d
 - Part 2 (KNN): https://medium.com/@diegodegese/7578ea509255
 - Part 3 (Neural Networks): https://medium.com/@diegodegese/ed148e6dfbe6
-- Part 4 (K-Means): TBD
+- Part 4 (K-Means): https://medium.com/@diegodegese/3df51ca95f3a
 - Part 5 (Genetic Algorithm): TBD
 - Part 6 (XGBoost): TBD
+- Part 7 (Average Ensembling): TBD
