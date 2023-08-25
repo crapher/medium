@@ -50,7 +50,7 @@ Please note that the information and code provided in this repository is for edu
 - Part 6 (XGBoost): TBD
 - Part 7 (Average Ensembling): TBD
 
-14.OptionsBacktestNakedPuts:
+14.OptionsNakedPuts:
 - Naked Puts: https://medium.com/@diegodegese/dea1607c81ca
 
 15.OptionsBacktestNysiTrend:
