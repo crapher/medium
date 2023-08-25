@@ -47,11 +47,11 @@ Please note that the information and code provided in this repository is for edu
 - Part 3 (Neural Networks): https://medium.com/@diegodegese/ed148e6dfbe6
 - Part 4 (K-Means): https://medium.com/@diegodegese/3df51ca95f3a
 - Part 5 (Genetic Algorithm): https://medium.com/@diegodegese/c47997e6f3e2
-- Part 6 (XGBoost): TBD
-- Part 7 (Average Ensembling): TBD
+- Part 6 (XGBoost): https://medium.com/@diegodegese/595791fe0618
+- Part 7 (Average Ensembling): https://medium.com/@diegodegese/adb58bf27bf2
 
 14.OptionsNakedPuts:
-- Naked Puts: https://medium.com/@diegodegese/dea1607c81ca
+- SPY Naked Puts: https://medium.com/@diegodegese/dea1607c81ca
 
 15.OptionsBacktestNysiTrend:
 - SPY 1-minute Options (Trend $NYSI): https://medium.com/@diegodegese/2f19a3adf438
