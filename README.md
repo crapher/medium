@@ -53,5 +53,8 @@ Please note that the information and code provided in this repository is for edu
 14.OptionsNakedPuts:
 - SPY Naked Puts: https://medium.com/@diegodegese/dea1607c81ca
 
-15.OptionsBacktestNysiTrend:
+15.OptionsNysiTrend:
 - SPY 1-minute Options (Trend $NYSI): https://medium.com/@diegodegese/2f19a3adf438
+
+16.OptionsGATrend:
+- SPY 1-minute Options (Trend Genetic Algorithm): https://medium.com/@diegodegese/f20b602e9b96
