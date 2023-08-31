@@ -25,7 +25,9 @@ Please note that the information and code provided in this repository is for edu
 - Volatility with Bollinger Bands: https://medium.com/@diegodegese/c53cdadce99b
 - Reversal: https://medium.com/@diegodegese/3f337e06f036
 
-08.GABBStrategy: https://medium.com/@diegodegese/ef4c0a83ec10
+08.GABBStrategy: 
+- OIH: https://medium.com/@diegodegese/ef4c0a83ec10
+- SPY: TBD
 
 09.CryptoDataDownload: https://medium.com/@diegodegese/4e0525d3ecd9
 
@@ -52,7 +54,7 @@ Please note that the information and code provided in this repository is for edu
 
 14.OptionsNakedPuts:
 - SPY Naked Puts: https://medium.com/@diegodegese/dea1607c81ca
-- QQQ Naked Puts: TBD
+- QQQ Naked Puts: https://medium.com/@diegodegese/221627826a74
 
 15.OptionsNysiTrend:
 - SPY 1-minute Options (Trend $NYSI): https://medium.com/@diegodegese/2f19a3adf438
