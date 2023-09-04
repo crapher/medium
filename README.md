@@ -64,4 +64,4 @@ Please note that the information and code provided in this repository is for edu
 - SPY 1-minute Options (Trend Genetic Algorithm): https://medium.com/@diegodegese/f20b602e9b96
 
 17.TrendFollowing:
-- SPY: TBD
+- SPY: https://medium.com/@diegodegese/ec02474169ba
