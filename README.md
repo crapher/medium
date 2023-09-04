@@ -27,7 +27,8 @@ Please note that the information and code provided in this repository is for edu
 
 08.GABBStrategy: 
 - OIH: https://medium.com/@diegodegese/ef4c0a83ec10
-- SPY: TBD
+- SPY: https://medium.com/@diegodegese/b87907dd62a7
+- TSLA: TBD
 
 09.CryptoDataDownload: https://medium.com/@diegodegese/4e0525d3ecd9
 
@@ -61,3 +62,6 @@ Please note that the information and code provided in this repository is for edu
 
 16.OptionsGATrend:
 - SPY 1-minute Options (Trend Genetic Algorithm): https://medium.com/@diegodegese/f20b602e9b96
+
+17.TrendFollowing:
+- SPY: TBD
