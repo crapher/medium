@@ -65,3 +65,6 @@ Please note that the information and code provided in this repository is for edu
 
 17.TrendFollowing:
 - SPY: https://medium.com/@diegodegese/ec02474169ba
+
+18.BestPossibleStrategy
+- SPY: TBD
