@@ -28,7 +28,7 @@ Please note that the information and code provided in this repository is for edu
 08.GABBStrategy: 
 - OIH: https://medium.com/@diegodegese/ef4c0a83ec10
 - SPY: https://medium.com/@diegodegese/b87907dd62a7
-- TSLA: TBD
+- TSLA: https://medium.com/@diegodegese/86623e466999
 
 09.CryptoDataDownload: https://medium.com/@diegodegese/4e0525d3ecd9
 
