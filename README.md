@@ -70,4 +70,5 @@ Please note that the information and code provided in this repository is for edu
 - SPY: https://medium.com/@diegodegese/6a7bb56c51c4
 
 19.MarketSentiment: 
-- Part 1: TBD
+- Part 1: https://medium.com/@diegodegese/b07a35752b57
+- Part 2: TBD
