@@ -71,4 +71,8 @@ Please note that the information and code provided in this repository is for edu
 
 19.MarketSentiment: 
 - Part 1: https://medium.com/@diegodegese/b07a35752b57
+- Part 2: https://medium.com/@diegodegese/4ac9d73af75f
+
+20.GAMACDStrategy:
+- Part 1: https://medium.com/@diegodegese/5c953d20e836
 - Part 2: TBD
