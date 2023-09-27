@@ -75,4 +75,4 @@ Please note that the information and code provided in this repository is for edu
 
 20.GAMACDStrategy:
 - Part 1: https://medium.com/@diegodegese/5c953d20e836
-- Part 2: TBD
+- Part 2: https://medium.com/@diegodegese/3958aff26d0a

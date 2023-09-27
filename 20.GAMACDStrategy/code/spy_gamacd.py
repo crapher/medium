@@ -99,10 +99,10 @@ def get_result(df, business_dates, min_dist_buy, trend_buy, max_dist_sell, trend
     if len(ops) == 0: # Return if there are no operations
         return -min_trades, 0, 0, 0
 
-    # Calculate the reward / operation
+    # Calculate P&L / operation
     ops['pnl'] = np.where(ops['signal'] == -1, (ops['close'] - ops['close'].shift()) * (CASH // ops['close'].shift()), 0)
 
-    # Generate the ops
+    # Calculate total P&L, wins, and losses
     pnl = ops['pnl'].sum()
     wins = len(ops[ops['pnl'] > 0])
     losses = len(ops[ops['pnl'] < 0])
