@@ -29,6 +29,7 @@ Please note that the information and code provided in this repository is for edu
 - OIH: https://medium.com/@diegodegese/ef4c0a83ec10
 - SPY: https://medium.com/@diegodegese/b87907dd62a7
 - TSLA: https://medium.com/@diegodegese/86623e466999
+- GM: TBD
 
 09.CryptoDataDownload: https://medium.com/@diegodegese/4e0525d3ecd9
 
@@ -77,4 +78,5 @@ Please note that the information and code provided in this repository is for edu
 - Part 1: https://medium.com/@diegodegese/5c953d20e836
 - Part 2: https://medium.com/@diegodegese/3958aff26d0a
 
-21.ControlChartStrategy: https://medium.com/@diegodegese/f6e9aca3d8a0
+21.ControlChartStrategy: 
+- Rules 1 to 6: https://medium.com/@diegodegese/f6e9aca3d8a0
