@@ -80,3 +80,6 @@ Please note that the information and code provided in this repository is for edu
 
 21.ControlChartStrategy: 
 - Rules 1 to 6: https://medium.com/@diegodegese/f6e9aca3d8a0
+
+22.MarketDataDownload:
+- Polygon Options: https://medium.com/@diegodegese/e20d46cbef3
