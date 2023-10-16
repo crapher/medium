@@ -29,9 +29,11 @@ Please note that the information and code provided in this repository is for edu
 - OIH: https://medium.com/@diegodegese/ef4c0a83ec10
 - SPY: https://medium.com/@diegodegese/b87907dd62a7
 - TSLA: https://medium.com/@diegodegese/86623e466999
-- GM: TBD
+- GM: https://medium.com/@diegodegese/25aa6c3b8157
 
-09.CryptoDataDownload: https://medium.com/@diegodegese/4e0525d3ecd9
+09.CryptoDataDownload: 
+- CryptoDataDownload: https://medium.com/@diegodegese/4e0525d3ecd9
+- BinanceDataDownload: TBD
 
 10.GARangePrices: https://medium.com/@diegodegese/fe9ed1081f8a
 
