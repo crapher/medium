@@ -89,3 +89,4 @@ Please note that the information and code provided in this repository is for edu
 
 23.OptionsStrategy
 - SPY 1-minute Options (0DTE - Iron Condor): https://medium.com/@diegodegese/752289bbdfcc
+- SPY 1-minute Options (0DTE - Credit Spread): https://medium.com/@diegodegese/03f9260a229c
