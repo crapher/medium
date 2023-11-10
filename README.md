@@ -34,7 +34,7 @@ Please note that the information and code provided in this repository is for edu
 
 09.CryptoDataDownload: 
 - CryptoDataDownload: https://medium.com/@diegodegese/4e0525d3ecd9
-- BinanceDataDownload: TBD
+- BinanceDataDownload: https://medium.com/@diegodegese/6e94dbb5c316
 
 10.GARangePrices: https://medium.com/@diegodegese/fe9ed1081f8a
 
