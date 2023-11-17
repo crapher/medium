@@ -30,7 +30,7 @@ Please note that the information and code provided in this repository is for edu
 - SPY: https://medium.com/@diegodegese/b87907dd62a7
 - TSLA: https://medium.com/@diegodegese/86623e466999
 - GM: https://medium.com/@diegodegese/25aa6c3b8157
-- XOM: TBD
+- XOM: https://medium.com/@diegodegese/7c1ee226cabb
 - SPY (Reversal Strategy): https://medium.com/@diegodegese/7bf687ee00a2
 
 09.CryptoDataDownload: 
