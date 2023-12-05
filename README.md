@@ -94,3 +94,6 @@ Please note that the information and code provided in this repository is for edu
 
 24.TradingAlert:
 - SPY: https://medium.com/@diegodegese/860deb3d2306
+
+25.BBGASeries
+- SPY: https://medium.com/@diegodegese/839db4aa9173
