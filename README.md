@@ -97,3 +97,4 @@ Please note that the information and code provided in this repository is for edu
 
 25.BBGASeries
 - SPY: https://medium.com/@diegodegese/839db4aa9173
+- AAPL: https://medium.com/@diegodegese/769d16def2ce
