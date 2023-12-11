@@ -99,3 +99,4 @@ Please note that the information and code provided in this repository is for edu
 - SPY: https://medium.com/@diegodegese/839db4aa9173
 - AAPL: https://medium.com/@diegodegese/769d16def2ce
 - QQQ: https://medium.com/@diegodegese/8e672bc7775e
+- KO: https://medium.com/@diegodegese/807d8cd26892
