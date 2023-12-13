@@ -100,3 +100,4 @@ Please note that the information and code provided in this repository is for edu
 - AAPL: https://medium.com/@diegodegese/769d16def2ce
 - QQQ: https://medium.com/@diegodegese/8e672bc7775e
 - KO: https://medium.com/@diegodegese/807d8cd26892
+- DIA: https://medium.com/@diegodegese/283f3dcd29cf
