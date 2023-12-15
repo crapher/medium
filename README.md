@@ -101,3 +101,4 @@ Please note that the information and code provided in this repository is for edu
 - QQQ: https://medium.com/@diegodegese/8e672bc7775e
 - KO: https://medium.com/@diegodegese/807d8cd26892
 - DIA: https://medium.com/@diegodegese/283f3dcd29cf
+- MCD: https://medium.com/@diegodegese/ebbe2705ba12
