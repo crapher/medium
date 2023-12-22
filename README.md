@@ -105,3 +105,4 @@ Please note that the information and code provided in this repository is for edu
 - IWM: https://medium.com/@diegodegese/ad404d807d1f
 - AXP: https://medium.com/@diegodegese/cdfba58deaf5
 - V: https://medium.com/@diegodegese/84c504621a18
+- GDX: https://medium.com/@diegodegese/11b4cd84de8c
