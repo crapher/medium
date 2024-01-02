@@ -108,3 +108,4 @@ Please note that the information and code provided in this repository is for edu
 - GDX: https://medium.com/@diegodegese/11b4cd84de8c
 - MSFT: https://medium.com/@diegodegese/4e0ca2e92d87
 - MRK: https://medium.com/@diegodegese/f50e7a326427
+- SLV: https://medium.com/@diegodegese/96dab85b4af6
