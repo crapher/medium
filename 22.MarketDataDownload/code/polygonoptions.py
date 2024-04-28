@@ -52,16 +52,16 @@ for contract in tqdm(df_index.to_dict('records')):
             )
 
         df_data = pd.DataFrame.from_dict(aggs)
-        
-        if len(df_data) == 0:
-            pass
+        if df_data.empty:
+            continue
         
         os.makedirs(day_folder, exist_ok=True)
+
         df_data['date'] = pd.to_datetime(df_data['timestamp'], unit='ms')
         df_data['strike'] = contract['strike_price']        
         df_data['expire_date'] = contract['expiration_date']
         df_data = df_data[['date','expire_date','strike','open','high','low','close','volume']]
         df_data.to_csv(file_name, index=False, compression='gzip')
         
-    except exceptions.NoResultsError:
+    except:
         pass
