@@ -93,6 +93,7 @@ Please note that the information and code provided in this repository is for edu
 - SPY 1-minute Options (0DTE - Iron Condor): https://medium.com/@diegodegese/752289bbdfcc
 - SPY 1-minute Options (0DTE - Credit Spread): https://medium.com/@diegodegese/03f9260a229c
 - QQQ 1-minute Options (0DTE - Credit Spread): https://medium.com/@diegodegese/ba271cf4951b
+- SPX 1-minute Options (0DTE - Credit Spread): https://medium.com/@diegodegese/9ff9d9dd8e96
 
 24.TradingAlert:
 - SPY: https://medium.com/@diegodegese/860deb3d2306
